@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Test Off-Screen Visualizations</title>
+<!-- (c) 2012 Michael Rohs, LMU Munich -->
+<!-- (c) 2013 Henning Pohl, University of Hanover -->
+<!-- (c) 2014 Max Pfeiffer, University of Hanover --> 
+
+<script src="OffscreenPointing.js"></script>
+<script type="text/javascript">
+var op;
+function onLoad() {
+	// op = new OffscreenPointing("halo", 50, [644, 330, 849, 623], [50, 100, 200], 20.0);
+	// op = new OffscreenPointing("wedge", 50, [644, 330, 849, 623], [50, 100, 200], 20.0);
+	// op = new OffscreenPointing("halo", 50, [644, 330, 849, 623], [50, 100, 200], 40.0);
+	op = new OffscreenPointing("wedge", 50, [644, 330, 849, 623], [50, 100, 200], 40.0);
+	op.init();
+	op.nextTrial();
+}
+</script>
+
+</head>
+<body onLoad="onLoad()">
+
+<img src="halomap.png" id="halomap" style="z-index:100;position:absolute;left:0;top:0" />
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1440" height="1000" style="z-index:150;position:absolute;left:0;top:0">
+	<circle id="halocirc" cx="0" cy="0" r="0" stroke="red" stroke-width="4" fill="none"/>
+	<polygon id="wedge" points="0,0 0,0 0,0" style="fill:none;stroke:red;stroke-width:4"/>
+	<!-- <rect x="0" y="1000" width="1440" height="1000" style="fill:rgb(255,255,255);stroke-width:0;stroke:rgb(255,255,255)"/> -->
+</svg>
+
+<!-- transparent window: x1 = 644, y1 = 330, x2 = 849, y2 = 623 -->
+<img src="halophone.png" name="halophone" style="z-index:200;position:absolute;left:0;top:0" />
+
+<p style="z-index:300;position:absolute;left:10;top:10">
+	Maximieren Sie das Browser-Fenster.<br/>
+	Klicken Sie so schnell und pr&auml;zise wie m&ouml;glich auf die Mittelpunkte der unsichtbaren Objekte.<br/>
+	Methode: "<span id="methodToUse">non</span>" Durchgang: <span id="trial">1</span> von <span id="trialCount">1</span><br/>
+</p>
+
+</body>
+</html>

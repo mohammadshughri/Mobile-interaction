@@ -1,0 +1,18 @@
+<resources>
+<string name="app_name">RSVPApp</string>
+<string name="text1">All exercises that are not explicitly declared as
+    group tasks must be done individually and handed in individually. Identical
+    submissions are treated as plagiarism. Plagiarism may lead to loss of exam
+    bonus points. You can submit the solution to this task in English or German
+    until Wednesday, MONTH DAY, at 23:59 via
+    https://assignments.hci.uni-hannover.de. Create a pdf file that contains the
+    text and images of your solution, name it
+    Assignment-07-Firstname-Lastname.pdf, and save it together with the
+    exported project (Android Studio: File -> Export -> Export to Zip File) in a
+    single zip file. Your submission must consist of a single zip file
+    containing all necessary files. The name of the .zip file, as well as the
+    names of the contained files, must not contain any umlauts. Therefore,
+    please resolve umlauts in file names.</string>
+<string name="text2">My second string.</string>
+<string name="text3">My third string.</string>
+</resources>
