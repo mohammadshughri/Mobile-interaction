@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">testingApp</string>
+    <string name="submit">Submit</string>
+    <string name="context">Context</string>
+    <string name="channel_id">testingApp</string>
+    <string name="channel_name">testingApp</string>
+    <string name="channel_description">This channel sends notifications that request inputting experience samples.</string>
+    <string name="context_1">Mobile Interaktion</string>
+    <string name="context_2">Programmieren 1</string>
+    <string name="context_3">Mensa</string>
+    <string name="effectiveness">Efficient/inefficient</string>
+    <string name="effectiveness_question">Was the lecture content delivered efficiently?</string>
+    <string name="very_bad">1</string>
+    <string name="very_good">5</string>
+    <string name="clearness">Clear/confusing</string>
+    <string name="clearness_question">Was the lecture material clear and understandable?</string>
+    <string name="exciting">Exciting/boring</string>
+    <string name="exciting_question">Did you find the lecture content stimulating?</string>
+    <string name="predictable">Predictable/unpredictable</string>
+    <string name="predictable_question">Was the lecture structure predictable?</string>
+    <string name="additional">Additional Question</string>
+    <string name="additional_question">How relevant was the lecture content to your current studies?</string>
+    <string name="additional2">Additional Question 2</string>
+    <string name="additional_question2">Did the lecture capture your interest and keep you engaged throughout?</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="context_question">What is your current context?</string>
+    <string name="start_survey">Start survey</string>
+    <string name="show_statistics">Show Statistics</string>
+    <string name="stop_periodic_sampling">Stop Periodic Sampling</string>
+    <string name="start_periodic_sampling">Start Periodic Sampling</string>
+</resources>
