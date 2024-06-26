@@ -29,6 +29,15 @@ class ProductViewModel(
     var quantity by mutableStateOf("")
         private set
 
+    var nutriments by mutableStateOf("") // variable to hold nutritional information
+        private set
+
+    var imageUrl by mutableStateOf("") // new variable to hold image URL
+        private set
+
+    var allergens by mutableStateOf("") // new variable to hold allergens
+        private set
+
     init {
         barcode = savedStateHandle.get<String>("barcode") ?: ""
         log("barcode = $barcode")
@@ -42,9 +51,16 @@ class ProductViewModel(
                         product.getString("product_name")
                     }
                     quantity = product.getString("quantity")
+                    nutriments = product.getJSONObject("nutriments")
+                        .toString() // fetch and store nutritional information
+                    imageUrl = product.getString("image_front_url") // fetch and store image URL
+                    allergens = product.optString("allergens") // fetch and store allergens
                 } catch (ex: Exception) {
                     name = ex.toString()
                     quantity = ""
+                    nutriments = ""
+                    imageUrl = ""
+                    allergens = ""
                 }
             }
         }
@@ -71,5 +87,4 @@ class ProductViewModel(
             }
         }
     }
-
 }
